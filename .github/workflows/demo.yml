@@ -1,0 +1,51 @@
+# Publica la copia de muestra en GitHub Pages.
+#
+# Construye con DEMO=1, que apunta las direcciones a github.io y marca todas
+# las páginas como no indexables, para que la muestra no compita en Google con
+# el dominio del taller. Lo que hay commiteado en la rama es la web de verdad,
+# la que se sube al hosting del cliente.
+name: Publicar la demo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # build.js verifica el resultado y termina en 1 si algo está roto,
+      # así que un fallo aquí detiene la publicación.
+      - name: Construir en modo demo
+        run: DEMO=1 node build.js
+
+      # Sin esto, Pages pasaría el sitio por Jekyll y se saltaría las
+      # carpetas que empiezan por guión bajo.
+      - run: touch .nojekyll
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - id: despliegue
+        uses: actions/deploy-pages@v4

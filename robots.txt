@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /_build/
+Disallow: /_original-sitio/
+Disallow: /assets/img/_original/
+
+Sitemap: https://www.cambios-automaticos.com/sitemap.xml

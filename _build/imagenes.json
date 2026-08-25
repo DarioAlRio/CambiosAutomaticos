@@ -1,0 +1,127 @@
+{
+  "nave-exterior.jpg": {
+    "ancho": 405,
+    "alto": 286,
+    "webp": true
+  },
+  "nave-fachada-lateral.jpg": {
+    "ancho": 432,
+    "alto": 305,
+    "webp": true
+  },
+  "nave-vista-aerea.jpg": {
+    "ancho": 207,
+    "alto": 156,
+    "webp": false
+  },
+  "rotulo-fachada.jpg": {
+    "ancho": 207,
+    "alto": 156,
+    "webp": true
+  },
+  "panel-herramientas.jpg": {
+    "ancho": 207,
+    "alto": 156,
+    "webp": false
+  },
+  "caja-abierta-banco.jpg": {
+    "ancho": 164,
+    "alto": 123,
+    "webp": false
+  },
+  "cajas-estanteria-detalle.jpg": {
+    "ancho": 164,
+    "alto": 123,
+    "webp": false
+  },
+  "convertidores-banco.jpg": {
+    "ancho": 164,
+    "alto": 123,
+    "webp": false
+  },
+  "varilla-nivel-aceite.jpg": {
+    "ancho": 164,
+    "alto": 123,
+    "webp": true
+  },
+  "banco-trabajo-planta-alta.jpg": {
+    "ancho": 343,
+    "alto": 242,
+    "webp": true
+  },
+  "detalle-carcasa.jpg": {
+    "ancho": 466,
+    "alto": 73,
+    "webp": true
+  },
+  "pasillo-oficina-cartel.jpg": {
+    "ancho": 343,
+    "alto": 243,
+    "webp": false
+  },
+  "elevadores-vista-alta.jpg": {
+    "ancho": 207,
+    "alto": 156,
+    "webp": true
+  },
+  "oficina-recepcion.jpg": {
+    "ancho": 405,
+    "alto": 286,
+    "webp": true
+  },
+  "plano-acceso.jpg": {
+    "ancho": 432,
+    "alto": 305,
+    "webp": true
+  },
+  "banda-carcasa.jpg": {
+    "ancho": 738,
+    "alto": 56,
+    "webp": true
+  },
+  "planta-alta-taller.jpg": {
+    "ancho": 405,
+    "alto": 286,
+    "webp": true
+  },
+  "planta-alta-acceso.jpg": {
+    "ancho": 405,
+    "alto": 286,
+    "webp": true
+  },
+  "almacen-cajas-estanteria.jpg": {
+    "ancho": 405,
+    "alto": 286,
+    "webp": false
+  },
+  "planta-baja-vehiculos.jpg": {
+    "ancho": 405,
+    "alto": 286,
+    "webp": false
+  },
+  "planta-baja-deportivo.jpg": {
+    "ancho": 405,
+    "alto": 286,
+    "webp": true
+  },
+  "planta-baja-zona-trabajo.jpg": {
+    "ancho": 405,
+    "alto": 286,
+    "webp": true
+  },
+  "planta-baja-elevadores.jpg": {
+    "ancho": 405,
+    "alto": 286,
+    "webp": true
+  },
+  "logotipo-tecnicars.png": {
+    "ancho": 195,
+    "alto": 56,
+    "webp": true
+  },
+  "og-tecnicars.jpg": {
+    "ancho": 1200,
+    "alto": 630,
+    "webp": false
+  }
+}
