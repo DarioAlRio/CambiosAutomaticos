@@ -1,0 +1,12 @@
+# La herramienta de imagen se instala solo cuando hace falta recomprimir
+# fotos, y no forma parte del sitio. Ver README.md, punto 7.
+node_modules/
+
+# Copia literal del sitio antiguo, guardada en local como referencia.
+# No se republica: es contenido del taller y no hace falta para construir.
+_original-sitio/
+
+# Capturas y archivos sueltos de trabajo.
+*.log
+.DS_Store
+Thumbs.db
