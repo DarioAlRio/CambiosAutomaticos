@@ -9,6 +9,10 @@ aplicación, ni framework. Se suben tal cual a cualquier hosting y funcionan.
 
 ---
 
+**Copia de muestra en línea:** <https://darioalrio.github.io/CambiosAutomaticos/>
+
+---
+
 ## 1. Cómo verlo en su ordenador
 
 Hace falta tener [Node](https://nodejs.org) instalado (versión 16 o
@@ -318,6 +322,41 @@ npm install sharp && node _build/imagenes.js
   `301`.
 - El sitio antiguo estaba sólo en español y no tenía otra versión de idioma, así
   que no hay `hreflang` que declarar.
+
+---
+
+## 8 bis. La copia de muestra de GitHub Pages
+
+Para poder enseñar el sitio antes de que esté en el dominio del taller, cada
+vez que se sube un cambio a la rama `main` se publica solo en:
+
+<https://darioalrio.github.io/CambiosAutomaticos/>
+
+Lo hace `.github/workflows/demo.yml`, que ejecuta el generador **en modo
+demo**:
+
+```bash
+DEMO=1 node build.js
+```
+
+Ese modo produce exactamente la misma web, pero con dos diferencias
+importantes:
+
+- Las direcciones canónicas, Open Graph y sitemap apuntan a la dirección de
+  GitHub, no a `cambios-automaticos.com`.
+- **Todas las páginas van marcadas como no indexables** (`noindex`), el
+  `robots.txt` se cierra entero (`Disallow: /`) y no se genera `sitemap.xml`.
+
+Es a propósito: una copia de muestra pública no debe competir en Google con la
+web real del taller ni quedarse rondando en los buscadores cuando ya no haga
+falta.
+
+**Lo que está guardado en el repositorio es la web de verdad**, la que se sube
+al hosting del cliente. La versión de muestra se construye al vuelo y no se
+guarda.
+
+Cuando el sitio pase al dominio definitivo, basta con borrar el archivo del
+flujo de trabajo y desactivar Pages en los ajustes del repositorio.
 
 ---
 
